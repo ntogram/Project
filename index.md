@@ -96,8 +96,26 @@
 
 </li>
  </div>
+ <h2> Port Configuration</h2><br/>
  
- <h2> Table for the ports  and flags that must be defined for ports reconfiguraton</h2>
+ <h3>Description</h3><br/>
+ <p> The  process for port configuration is almost the same for all tools.</p>
+ <ol>
+  <li>Update the corresponding  args  file with new port. Args files for these services are found in path: /var/snap/microk8s/current/args/. The option flag argument for port has a different name</li>
+  <li>Inform other services for new port</li>
+  <li> Create new, updated copies of our kubeconfig for kubelet and kubectl to use</li>
+ <li>Inform kubelet about the new kubeconfig</li>
+ <li>Disable and enable the microk8s snap to restart all services</li>
+ <li>Check if configuration process is  executed correctly by running microk8s inspect and the necessary command i terminal for checking if  all services are running  in correct new ports.
+</ol>  
+ 
+ <br/>
+ 
+ 
+ 
+ 
+ 
+ <h3> Table for the ports  and flags that must be defined for ports reconfiguraton</h2>
  <table>
   <thead>
     <tr>
