@@ -189,7 +189,7 @@
   <li> Open the terminal and execute the following command:<br/>
    <code>cd &lt; path of the unziped folder &gt;</code> </li>
     <li> For every .sh file in this folder execute <br/>
-     <code> chmod +x &lt; filename.sh  &gt; <div> or more specifically</div><br/>
+     <code> chmod +x &lt; filename.sh  &gt; </code><div> or more specifically</div><br/>
       <code>chmod +x change_kube_apiserverport.sh </code><br/>
        <code>chmod +x change_kubeletport.sh </code><br/>
         <code>chmod +x change_kube_schedulerport.sh </code><br/>
