@@ -164,7 +164,7 @@
     </tr>
   </tbody>
 </table>
- 
+ <br/>
  <div>
  <h3> Prerequirements</h3>
 <br/>
@@ -176,7 +176,28 @@
  </ul>
  <p> if you don't have installed  these packages don't worry you can install them by executing in terminal the following  commands:</p>
  <ul>
-  <li<code>sudo apt install net-tools</code></li>
+  <li><code>sudo apt install net-tools</code></li>
   <li><code>sudo apt install jq</code></li>
  </ul> 
  <p> Hint:these package  will be  installed the first time the main program for microk8s_port_conf.sh  port configuration  will be executed</p>
+ <br/>
+ <h3> Instructions for using   scripts for  port configuration</h3>
+ <br/>
+ <ol>
+  <li> Download code from <a href="https://drive.google.com/file/d/1g1Ot9zClw9Nyw0AIpUKpkDRqlWGuXtNQ/">code</a></li>
+  <li> Go to the folder where the downloaded zip file was stored and unzip it</li>
+  <li> Open the terminal and execute the following command:<br/>
+   <code>cd <path of the unziped folder> </li>
+    <li> For every .sh file in this folder execute <br/>
+     <code> chmod +x <filename.sh>  <div> or more specifically</div><br/>
+      <code>chmod +x change_kube_apiserverport.sh </code><br/>
+       <code>chmod +x change_kubeletport.sh </code><br/>
+        <code>chmod +x change_kube_schedulerport.sh </code><br/>
+       <code>chmod +x change_kube_controllerport.sh </code><br/>
+       <code>chmod +x change_kube_proxyports.sh </code><br/>
+       <code>chmod +x microk8s_port_conf.sh </code><br/>
+      <br/> <p> We are ready to use these scripts</p>
+      
+      <h4>How to execute these scripts?</h4>
+      
+      
