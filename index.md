@@ -115,16 +115,16 @@
  
  
  
- <h3> Table for the ports  and flags that must be defined for ports reconfiguraton</h2>
+ <h3> Table for the ports  and flags that must be defined for ports reconfiguraton</h3>
  <table>
   <thead>
     <tr>
       <th>Port</th>
       <th>Service</th>
       <th>Description</th>
-     <th>Option Flag for port configuration<th/>
+     <th>Option Flag for port configuration</th>
     </tr>
-  </thead>
+ </thead>
   <tbody>
     <tr>
       <td>8080</td>
