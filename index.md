@@ -195,9 +195,8 @@
         <code>chmod +x change_kube_schedulerport.sh </code><br/>
        <code>chmod +x change_kube_controllerport.sh </code><br/>
        <code>chmod +x change_kube_proxyports.sh </code><br/>
-       <code>chmod +x microk8s_port_conf.sh </code><br/>
-      <br/> <p> We are ready to use these scripts</p>
-      
-      <h4>How to execute these scripts?</h4>
-      
-      
+     <code>chmod +x microk8s_port_conf.sh </code></li></ol>
+     <br/>
+     <p> We are ready to use these scripts</p>
+ <h4> How to execute these scripts?</h4>
+ 
