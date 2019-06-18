@@ -2,6 +2,15 @@
 
  <head>
    <title> Cloud Project</title>
+ <style> 
+#s1,#s2 ,#s3,#s4,#s5{
+ display:none
+}
+</style>
+ 
+ 
+ 
+ 
   </head>
 
 <h1>An easy and automatic way for port configuration in microk8s</h1>
@@ -51,10 +60,10 @@
  The goal of this  project is to create   some small scripts to configure  with a user friendly way  the ports of the system where the following tools are executing:
  <ul>
   <li><a href="" onclick='document.getElementById("s1").style.display = "inline";'>kube-apiserver</a><br/>
-   <p id='s1' style="display:none;">The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster’s shared state through which all other components interact.</p>
+   <p id='s1'>The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster’s shared state through which all other components interact.</p>
   </li>
   <li><a href="" onclick='document.getElementById("s2").style.display = "inline";' >kubelet</a>
- <div id='s2' style="display:none;" > <p>The kubelet is the primary “node agent” that runs on each node. The kubelet works in terms of a PodSpec. A PodSpec is a YAML or JSON object that describes a pod. The kubelet takes a set of PodSpecs that are provided through various mechanisms (primarily through the apiserver) and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn’t manage containers which were not created by Kubernetes.</p>
+ <div id='s2' > <p>The kubelet is the primary “node agent” that runs on each node. The kubelet works in terms of a PodSpec. A PodSpec is a YAML or JSON object that describes a pod. The kubelet takes a set of PodSpecs that are provided through various mechanisms (primarily through the apiserver) and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn’t manage containers which were not created by Kubernetes.</p>
    <p>There are three ways that a container manifest can be provided to the Kubelet.</p>
     <ul>
      <li>File: Path passed as a flag on the command line. Files under this path will be monitored periodically for updates. The         monitoring period is 20s by default and is configurable via a flag.</li>
@@ -66,11 +75,11 @@
   </p>
  
   <li><a href="" onclick='document.getElementById("s3").style.display = "inline";'>kube-controller-manager</a>
-  <p id='s3'  style="display:none;" >The Kubernetes controller manager is a daemon that embeds the core control loops shipped with Kubernetes. In applications of robotics and automation, a control loop is a non-terminating loop that regulates the state of the system. In Kubernetes, a controller is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state. Examples of controllers that ship with Kubernetes today are the replication controller, endpoints controller, namespace controller, and serviceaccounts controller.</p>
+  <p id='s3'>The Kubernetes controller manager is a daemon that embeds the core control loops shipped with Kubernetes. In applications of robotics and automation, a control loop is a non-terminating loop that regulates the state of the system. In Kubernetes, a controller is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state. Examples of controllers that ship with Kubernetes today are the replication controller, endpoints controller, namespace controller, and serviceaccounts controller.</p>
   
   </li>
   <li><a href="" onclick='document.getElementById("s4").style.display = "inline";' >kube-scheduler</a>
-  <p id='s4'  style="display:none;" >
+  <p id='s4'>
    The Kubernetes scheduler is a policy-rich, topology-aware, workload-specific function that significantly impacts availability, performance, and capacity. The scheduler needs to take into account individual and collective resource requirements, quality of service requirements, hardware/software/policy constraints, affinity and anti-affinity specifications, data locality, inter-workload interference, deadlines, and so on. Workload-specific requirements will be exposed through the API as necessary.
  </p>
 </li>
