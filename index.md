@@ -1,9 +1,9 @@
 
-<html>
+
  <head>
    <title> Cloud Project</title>
   </head>
-<body>
+
 <h1>An easy and automatic way for port configuration in microk8s</h1>
  <div>
 <div> First we make  a short introduction in microk8s kubernetes<div>
@@ -44,5 +44,4 @@
  </code>
  <p>Installing the snap</p><br/>
  <code>snap install microk8s_latest_amd64.snap --classic --dangerous</code>
- </body>
-</html>
+ 
