@@ -115,7 +115,7 @@
  
  
  
- <h3> Table for the ports  and flags that must be defined for ports reconfiguraton</h3>
+ <h3> Table for the ports  and flags that must be defined for ports reconfiguraton</h3><br/>
  <table>
   <thead>
     <tr>
@@ -165,6 +165,18 @@
   </tbody>
 </table>
  
- 
- 
- 
+ <div>
+ <h3> Prerequirements</h3>
+<br/>
+ <p> This program has been  checked in the latest linux ubuntu version</p>
+ <p> It would be great  if you have already installed the following packages</p>
+ <ul>
+  <li>net-tools:it is used for checking which ports of the system are available</li>
+  <li>jq:It is used for reading a json file.</li>
+ </ul>
+ <p> if you don't have installed  these packages don't worry you can install them by executing in terminal the following  commands:</p>
+ <ul>
+  <li<code>sudo apt install net-tools</code></li>
+  <li><code>sudo apt install jq</code></li>
+ </ul> 
+ <p> Hint:these package  will be  installed the first time the main program for microk8s_port_conf.sh  port configuration  will be executed</p>
