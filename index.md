@@ -219,7 +219,7 @@
 </code>  <br/>
    
   <br/><p>Another json example exist along with code.Json for port configuration script is given by  executing  in command  in the folder of script:<br/><br/></p>
- <code> ./microk8s_port_conf.sh json &lt; filename &gt; .json</code></li> <br/><br/>
+ <code> ./microk8s_port_conf.sh json &lt; filename &gt; .json</code> <br/><br/>
   <p>If user gives as second argument  a  file tha is not json or  a json file that does not exist, program return a coresponding error message.</p>
   <p> Program use jq   to get port values from  json file</p>
   </li>
