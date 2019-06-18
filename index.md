@@ -27,21 +27,21 @@
 <h3>Building from source<h3><br/>
 <p>To build the snap you need a working LXD installation. To install LXD on Ubuntu first remove any old packages:<p>
 
- <code>sudo apt-get purge lxc*<br/>
-  sudo apt-get purge lxd*</code><br/>
+ <code> sudo apt-get purge lxc*</code>
+  <code> sudo apt-get purge lxd*</code><br/>
  Get the latest LXD and configure it with:
  </p>
  <code>
-  sudo snap install lxd <br/>
-  sudo lxd init --auto
+  sudo snap install lxd >code>
+ <code> sudo lxd init --auto
  </code>
  <br/>
  <p> Build MicroK8s with:</p>
  
- <code>git clone https://github.com/ubuntu/microk8s <br/>
-       cd microk8s <br/>
-       snapcraft cleanbuild<br/>
- </code>
+ <code>git clone https://github.com/ubuntu/microk8s </code>
+    <code>   cd microk8s </code>
+     <code>  snapcraft cleanbuild</code>
+ 
  <p>Installing the snap</p>
  <code>snap install microk8s_latest_amd64.snap --classic --dangerous</code>
  
