@@ -59,10 +59,10 @@
  <div>
  The goal of this  project is to create   some small scripts to configure  with a user friendly way  the ports of the system where the following tools are executing:
  <ul>
-  <li><a href="" onclick='document.getElementById("s1").style.display = "inline";'>kube-apiserver</a><br/>
+  <li><a href="" onclick='document.getElementById("s1").style.display = "block";'>kube-apiserver</a><br/>
    <p id='s1'>The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster’s shared state through which all other components interact.</p>
   </li>
-  <li><a href="" onclick='document.getElementById("s2").style.display = "inline";' >kubelet</a>
+  <li><a href="" onclick='document.getElementById("s2").style.display = "block";' >kubelet</a>
  <div id='s2' > <p>The kubelet is the primary “node agent” that runs on each node. The kubelet works in terms of a PodSpec. A PodSpec is a YAML or JSON object that describes a pod. The kubelet takes a set of PodSpecs that are provided through various mechanisms (primarily through the apiserver) and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn’t manage containers which were not created by Kubernetes.</p>
    <p>There are three ways that a container manifest can be provided to the Kubelet.</p>
     <ul>
@@ -74,16 +74,16 @@
   The Pod Lifecycle Event Generator (PLEG) is a function of the kubelet that creates a list of the states for all containers and pods then compares it to the previous states of the containers and pods in a process called Relisting. This allows the PLEG to know which pods and containers need to be synced
   </p>
  
-  <li><a href="" onclick='document.getElementById("s3").style.display = "inline";'>kube-controller-manager</a>
+  <li><a href="" onclick='document.getElementById("s3").style.display = "block";'>kube-controller-manager</a>
   <p id='s3'>The Kubernetes controller manager is a daemon that embeds the core control loops shipped with Kubernetes. In applications of robotics and automation, a control loop is a non-terminating loop that regulates the state of the system. In Kubernetes, a controller is a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state. Examples of controllers that ship with Kubernetes today are the replication controller, endpoints controller, namespace controller, and serviceaccounts controller.</p>
   
   </li>
-  <li><a href="" onclick='document.getElementById("s4").style.display = "inline";' >kube-scheduler</a>
+  <li><a href="" onclick='document.getElementById("s4").style.display = "block";' >kube-scheduler</a>
   <p id='s4'>
    The Kubernetes scheduler is a policy-rich, topology-aware, workload-specific function that significantly impacts availability, performance, and capacity. The scheduler needs to take into account individual and collective resource requirements, quality of service requirements, hardware/software/policy constraints, affinity and anti-affinity specifications, data locality, inter-workload interference, deadlines, and so on. Workload-specific requirements will be exposed through the API as necessary.
  </p>
 </li>
-  <li><a href="" onclick='document.getElementById("s5").style.display = "inline";'>kube-proxy</a>
+  <li><a href="" onclick='document.getElementById("s5").style.display = "block";'>kube-proxy</a>
    <p id='s5'  style="display:none;">
     The Kubernetes network proxy runs on each node. This reflects services as defined in the Kubernetes API on each node and can do simple TCP, UDP, and SCTP stream forwarding or round robin TCP, UDP, and SCTP forwarding across a set of backends. Service cluster IPs and ports are currently found through Docker-links-compatible environment variables specifying ports opened by the service proxy. There is an optional addon that provides cluster DNS for these cluster IPs. The user must create a service with the apiserver API to configure the proxy.
 </p>
