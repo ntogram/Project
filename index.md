@@ -14,10 +14,10 @@
   </head>
 
 <h1>An easy and automatic way for port configuration in microk8s</h1>
- <div>
+ <div><br/>
 <div> First we make  a short introduction in microk8s kubernetes<div>
   <br/><br/>
-  <h2>Introduction</h2>
+  <h2>Introduction</h2><br/>
   <h3>Kubernates</h3>
  <p>Kubernetes is a portable, extensible open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.</p>
  <h3> Microk8s</h3>
@@ -57,7 +57,12 @@
  <br/>
  <br/>
  <div>
+ 
+ <h2> Project Goal</h2><br/>
  The goal of this  project is to create   some small scripts to configure  with a user friendly way  the ports of the system where the following tools are executing.Click on  tools for more elements
+ 
+ <h2> Summary for the tools</h2>
+ 
  <ul>
   <li><a href="javascript:void(0);" onclick='document.getElementById("s1").style.display = "block";'>kube-apiserver</a><br/>
    <p id='s1'>The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster’s shared state through which all other components interact.</p>
@@ -91,4 +96,57 @@
 
 </li>
  </div>
+ 
+ <h2> Table for the ports  and flags that must be defined for ports reconfiguraton</h2>
+ <table>
+  <thead>
+    <tr>
+      <th>Port</th>
+      <th>Service</th>
+      <th>Description</th>
+     <th>Option Flag for port configuration<th/>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8080</td>
+      <td>API server</td>
+      <td>Port for insecure communication to the API server</td>
+     <td>insecure-port</td>
+    </tr>
+    <tr>
+      <td>10248</td>
+      <td>kubelet</td>
+      <td>Localhost healthz endpoint.</td>
+     <td>healthz-port</td>
+    </tr>
+    <tr>
+      <td>10249</td>
+      <td>kube-proxy</td>
+      <td>Port for the metrics server to serve on.</td>
+     <td>metrics-port</td>
+    </tr>
+    <tr>
+      <td>10251</td>
+      <td>kube-scheduler</td>
+      <td>Port on which to serve HTTP insecurely.</td>
+      <td>port</td>
+    </tr>
+    <tr>
+      <td>10252</td>
+      <td>kube-controller</td>
+      <td>Port on which to serve HTTP insecurely.</td>
+     <td>port</td>
+    </tr>
+    <tr>
+      <td>10256</td>
+      <td>kube-proxy</td>
+      <td>Port to bind the health check server.</td>
+      <td>healthz-port</td> 
+    </tr>
+  </tbody>
+</table>
+ 
+ 
+ 
  
