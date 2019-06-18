@@ -241,3 +241,5 @@ Json Mode for port configuration script is given by  executing  in command  in t
   ./microk8s_port_conf.sh parameters none none 8083 8084 8085 8086</code>
  </li>
  </ul>
+<br/><p> Finally  in the microk8s_port_conf.sh, we check the  values  that users give as port numbers. Firstly   we check if values are not integers. For this case program print in terminal error message  that inform user that some of the parameters are not valid. We also check if the  port given is used. Here there are two cases. The first case as we have already mentioned above is that this service i use the given port and  program print that this service has already use this port. In the second case, the given port is used by another service and the program inform the users that this port is unavailable.
+ Program print corresponding messages for the cases that users don't give a port for one or some service.</p>
