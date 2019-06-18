@@ -230,8 +230,8 @@ Json Mode for port configuration script is given by  executing  in command  in t
    <li>kubeletvport</li>
    <li>kube-scheduler port</li>
    <li>kube-controller-manager port</li>
-   <liproxy:port for metrics></li>
-   <li>proxy port:for checking health</li>
+   <li> proxy port: for metrics></li>
+   <li> proxy port:for checking health</li>
  </ol><br/>
 <p> The last port services can be omitted if  user don't want change their ports but  if users dont' want to change port for a service in the middle, they must give as argument  fr the port of  this service  the term  "none"</p><br/>
  <p>Some examples:</p>
