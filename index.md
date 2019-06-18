@@ -35,13 +35,13 @@
   sudo snap install lxd </code><br/>
  <code> sudo lxd init --auto
  </code>
- <br/>
+ <br/><br/>
  <p> Build MicroK8s with:</p>
  
  <code>git clone https://github.com/ubuntu/microk8s <br/></code>
-    <code>   cd microk8s><br/> </code><br/>
+    <code>   cd microk8s><br/> </code>
      <code>  snapcraft cleanbuild</code>
- 
+ <br/>
  <p>Installing the snap</p>
  <code>snap install microk8s_latest_amd64.snap --classic --dangerous</code>
  
