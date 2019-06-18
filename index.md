@@ -184,7 +184,7 @@
  <h3> Instructions for using   scripts for  port configuration</h3>
  <br/>
  <ol>
-  <li> Download code from <a href="https://drive.google.com/file/d/1zlwRBGEluaq0WdT6w9DytS06D_8pTi40/" target="_blank">code</a></li>
+  <li> Download code from <a href="#" target="_blank">code</a></li>
   <li> Go to the folder where the downloaded zip file was stored and unzip it</li>
   <li> Open the terminal and execute the following command:<br/>
    <code>cd &lt; path of the unziped folder &gt;</code> </li>
