@@ -202,9 +202,9 @@
   <br/> <p> Actually the users  should execute only main script microk8s_port_conf.sh. The other scripts  make port configurations for services and are executed via microk8s_port_conf.sh . User can  execute the other scripts but he must  read and understand the whole  structure and process of this project which is much complicated.</p>
 <p> For executing microk8s_port_conf.sh you should give some arguments   before executing the script. The  first argument is mode  argument . User has   4 options:
  <ul>
-  <li> help: give an complete manual for using  this script. Help  for port configuration script is given by  executing  in command  in the folder of script:<br/><br/>
+  <li> help: give an complete manual for using  this script. Help Mode  for port configuration script is given by  executing  in command  in the folder of script:<br/><br/>
    <code> ./microk8s_port_conf.sh help</code></li><br/>
-  <li>auto:Reset services port to default values. If a or some services use the default port , program inform the use that this  service has already used this port.Auto for port configuration script is given by  executing  in command  in the folder of script:<br/>
+  <li>auto:Reset services port to default values. If a or some services use the default port , program inform the use that this  service has already used this port.Auto Mode for port configuration script is given by  executing  in command  in the folder of script:<br/>
  <code> ./microk8s_port_conf.sh auto</code></li><br/>
   <li> json:Before executing the script in this mode, you should make  a json file that has  a  json object. Every element in this json should has  the followin format &lt kubernetes_sevice_name &gt : &lt port number &gt. An example of  json for this script is the following:<br/><br/>
    <code>
@@ -218,11 +218,26 @@
 }
 </code>  <br/>
    
-  <br/><p>Another json example exist along with code.Json for port configuration script is given by  executing  in command  in the folder of script:<br/><br/></p>
+  <br/><p>Another json example exist along with code.In json  file,Services names can  be given in any order and some service can be omitted- this is for services that should not  change port<br/>
+Json Mode for port configuration script is given by  executing  in command  in the folder of script:<br/><br/></p>
  <code> ./microk8s_port_conf.sh json &lt; filename &gt; .json</code> <br/><br/>
   <p>If user gives as second argument  a  file tha is not json or  a json file that does not exist, program return a coresponding error message.</p>
   <p> Program use jq   to get port values from  json file</p>
   </li>
-  <li>
+  <li>parameters:users can give ports directly to the program as arguments when parameters mode is used but in contrast to json here services ports are not given  in any order. User should give  the ports with the following order:
+ <ol>
+  <li>kube_apiserver port</li>
+   <li>kubeletvport</li>
+   <li>kube-scheduler port</li>
+   <li>kube-controller-manager port</li>
+   <liproxy:port for metrics></li>
+   <li>proxy port:for checking health</li>
+ </ol><br/>
+<p> The last port services can be omitted if  user don't want change their ports but  if users dont' want to change port for a service in the middle, they must give as argument  fr the port of  this service  the term  "none"</p><br/>
+ <p>Some examples:</p>
+ <br/>
+ <code> ./microk8s_port_conf.sh parameters 8081 8082 8083 8084 8085 8086 <br/>
+  ./microk8s_port_conf.sh parameters 8081 8082 8083 8084 <br/>
+  ./microk8s_port_conf.sh parameters none none 8083 8084 8085 8086</code>
  </li>
  </ul>
