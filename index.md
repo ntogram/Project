@@ -41,7 +41,19 @@
  <code>git clone https://github.com/ubuntu/microk8s <br/></code>
     <code>   cd microk8s><br/> </code>
      <code>  snapcraft cleanbuild</code>
- <br/>
+ <br/><br/>
  <p>Installing the snap</p>
  <code>snap install microk8s_latest_amd64.snap --classic --dangerous</code>
+ </div>
+ 
+ <div>
+ The goal of this  project is to create   some small scripts to configure  with a user friendly way  the ports of the system where the following tools are executing:
+ <ul>
+  <li>kube-apiserver</li>
+  <li>kubelet</li>
+  <li>kube-controller-manager</li>
+  <li>kube-scheduler</li>
+  <li>kube-scheduler </li>
+</ul>
+ </div>
  
