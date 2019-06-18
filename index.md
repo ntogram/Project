@@ -5,6 +5,7 @@
   </head>
 <body>
 <h1>An easy and automatic way for port configuration in microk8s</h1>
+ <div>
 <div> First we make  a short introduction in microk8s kubernetes<div>
   <br/><br/>
   <h2>Introduction</h2>
@@ -14,5 +15,34 @@
  <p>
   MicroK8s is a CNCF certified upstream Kubernetes deployment that runs entirely in your workstation. Being a snap it runs all Kubernetes services natively (i.e. no virtual machines) while packing the entire set of libraries and binaries needed. Installation is limited by how fast you can download a couple of hundred megabytes and the removal of MicroK8s leaves nothing behind
  </p>
+ </div>
+ <div>
+  <h2> Microk8s Installation</h2><br/><br/>
+  <h3>Kubernetes in a snap that you can run locally.
+
+<p>You can install MicroK8s with the latest stable upstream Kubernetes release with:</p>
+<br/><br/>
+<code>snap install microk8s --classic</code>
+<br/><br/>
+<h3>Building from source<h3>
+<p>To build the snap you need a working LXD installation. To install LXD on Ubuntu first remove any old packages:<p>
+<br/><br/>
+ <code>sudo apt-get purge lxc*<br/>
+  sudo apt-get purge lxd*</code><br/>
+ Get the latest LXD and configure it with:
+ </p><br/>
+ <code>
+  sudo snap install lxd <br/>
+  sudo lxd init --auto
+ </code>
+ <br/>
+ <p> Build MicroK8s with:</p>
+ <br/>
+ <code>git clone https://github.com/ubuntu/microk8s <br/>
+       cd microk8s <br/>
+       snapcraft cleanbuild<br/>
+ </code>
+ <p>Installing the snap</p><br/>
+ <code>snap install microk8s_latest_amd64.snap --classic --dangerous</code>
  </body>
 </html>
