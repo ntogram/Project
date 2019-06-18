@@ -21,27 +21,27 @@
   <h3>Kubernetes in a snap that you can run locally.
 
 <p>You can install MicroK8s with the latest stable upstream Kubernetes release with:</p>
-<br/>
+
 <code>snap install microk8s --classic</code>
 <br/>
 <h3>Building from source<h3><br/>
 <p>To build the snap you need a working LXD installation. To install LXD on Ubuntu first remove any old packages:<p>
-<br/>
+
  <code>sudo apt-get purge lxc*<br/>
   sudo apt-get purge lxd*</code><br/>
  Get the latest LXD and configure it with:
- </p><br/>
+ </p>
  <code>
   sudo snap install lxd <br/>
   sudo lxd init --auto
  </code>
  <br/>
  <p> Build MicroK8s with:</p>
- <br/>
+ 
  <code>git clone https://github.com/ubuntu/microk8s <br/>
        cd microk8s <br/>
        snapcraft cleanbuild<br/>
  </code>
- <p>Installing the snap</p><br/>
+ <p>Installing the snap</p>
  <code>snap install microk8s_latest_amd64.snap --classic --dangerous</code>
  
