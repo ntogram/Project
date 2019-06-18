@@ -106,7 +106,7 @@
   <li> Create new, updated copies of our kubeconfig for kubelet and kubectl to use</li>
  <li>Inform kubelet about the new kubeconfig</li>
  <li>Disable and enable the microk8s snap to restart all services</li>
- <li>Check if configuration process is  executed correctly by running microk8s inspect and the necessary command i terminal for checking if  all services are running  in correct new ports.
+ <li>Check if configuration process is  executed correctly by running microk8s inspect and the necessary command i terminal for checking if  all services are running  in correct new ports.</li>
 </ol>  
  
  <br/>
