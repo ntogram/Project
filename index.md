@@ -202,11 +202,11 @@
   <br/> <p> Actually the users  should execute only main script microk8s_port_conf.sh. The other scripts  make port configurations for services and are executed via microk8s_port_conf.sh . User can  execute the other scripts but he must  read and understand the whole  structure and process of this project which is much complicated.</p>
 <p> For executing microk8s_port_conf.sh you should give some arguments   before executing the script. The  first argument is mode  argument . User has   4 options:
  <ul>
-  <li> help: give an complete manual for using  this script. Help  for port configuration script is given by  executing  in command  in the folder of script:<br/>
-   <code> ./microk8s_port_conf.sh help</code></li>
+  <li> help: give an complete manual for using  this script. Help  for port configuration script is given by  executing  in command  in the folder of script:<br/><br/>
+   <code> ./microk8s_port_conf.sh help</code></li><br/>
   <li>auto:Reset services port to default values. If a or some services use the default port , program inform the use that this  service has already used this port.Auto for port configuration script is given by  executing  in command  in the folder of script:<br/>
- <code> ./microk8s_port_conf.sh auto</code></li>
-  <li> json:Before executing the script in this mode, you should make  a json file that has  a  json object. Every element in this json should has  the followin format &lt kubernetes_sevice_name &gt : &lt port number &gt. An example of  json for this script is the following:<br/>
+ <code> ./microk8s_port_conf.sh auto</code></li><br/>
+  <li> json:Before executing the script in this mode, you should make  a json file that has  a  json object. Every element in this json should has  the followin format &lt kubernetes_sevice_name &gt : &lt port number &gt. An example of  json for this script is the following:<br/><br/>
    <code>
   {
 "kube_apiserver":8082,
@@ -216,9 +216,9 @@
 "kube_proxy_metrics":10281,
 "kube_proxy_healthz":10280
 }
-</code>  
-  <br/>Json for port configuration script is given by  executing  in command  in the folder of script:<br/>
- <code> ./microk8s_port_conf.sh json &lt filename &gt .json</code></li> <br/>
+</code>  <br/>
+  <br/>Json for port configuration script is given by  executing  in command  in the folder of script:<br/><br/>
+ <code> ./microk8s_port_conf.sh json &lt filename &gt .json</code></li> <br/><br/>
   If user gives as second argument  a  file tha is not json or  a json file that does not exist, program return a corespondin error message.<br/>
   <p> Program use jq   to get port values from  json file</p>
   </li>
