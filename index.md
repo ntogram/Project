@@ -187,9 +187,9 @@
   <li> Download code from <a href="https://drive.google.com/file/d/1g1Ot9zClw9Nyw0AIpUKpkDRqlWGuXtNQ/">code</a></li>
   <li> Go to the folder where the downloaded zip file was stored and unzip it</li>
   <li> Open the terminal and execute the following command:<br/>
-   <code>cd <path of the unziped folder></code> </li>
+   <code>cd &lt; path of the unziped folder &gt;</code> </li>
     <li> For every .sh file in this folder execute <br/>
-     <code> chmod +x <filename.sh>  <div> or more specifically</div><br/>
+     <code> chmod +x &lt; filename.sh  &gt; <div> or more specifically</div><br/>
       <code>chmod +x change_kube_apiserverport.sh </code><br/>
        <code>chmod +x change_kubeletport.sh </code><br/>
         <code>chmod +x change_kube_schedulerport.sh </code><br/>
