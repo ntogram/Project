@@ -228,7 +228,7 @@ Json Mode for port configuration script is given by  executing  in terminal  the
    <li>kubelet port</li>
    <li>kube-scheduler port</li>
    <li>kube-controller_manager port</li>
-   <li> proxy port: for metrics></li>
+   <li> proxy port: for metrics</li>
    <li> proxy port:for checking health</li>
  </ol><br/>
 <p> The last port services can be omitted if  user don't want change their ports but  if users don't want to change port for a service in the middle, they must give as argument  for the port of  this service  the term  "none"</p><br/>
